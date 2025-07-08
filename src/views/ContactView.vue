@@ -9,6 +9,6 @@ const router = useRouter()
   <div>
     <button @click="router.push('/')">{{t('home')}}</button>
     <h1>{{ t('contact') }}</h1>
-    <p v-html="t('contactParagraph')"></p>
+    <p>{{ t('contactParagraph', {mail: 'tobias.americo-schmidradler@proton.me'}) }}</p>
   </div>
 </template>
